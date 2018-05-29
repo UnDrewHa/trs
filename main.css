@@ -1,0 +1,292 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #262626;
+    flex: 0 0 80px;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.logo {
+    color: #fff;
+    font: 26px/1 Times, 'Times New Roman', sans-serif;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav li {
+    display: block;
+    height: 100%;
+}
+
+.main-nav a {
+    color: #d9d9d9;
+    display: block;
+    height: 100%;
+    font: bold 13px/80px Verdana, sans-serif;
+    padding: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.main-nav a:hover {
+    color: #ff6760;
+}
+
+.main-nav .active {
+    color: #ff6760;
+}
+
+.hero {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.hero__wrap {
+    margin: 0 auto;
+    width: 1100px;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero p {
+    margin: .7em 0;
+}
+
+.hero__call-to-action {
+    margin-top: .7em;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #E6E6E6;
+    border: 0;
+    border-radius: 2px;
+    display: inline-block;
+    font: 13px/1 Verdana, sans-serif;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+}
+
+.btn-accent {
+    background: #ff6760;
+    color: #fff;
+}
+
+.btn-submit {
+    background: #0078e7;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 1100px;
+}
+
+main p,
+main ul {
+    font-size: 18px;
+}
+
+main h2:first-of-type {
+    margin-top: 0;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-top: 80px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.services__item {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.services__item span {
+    display: block;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.people {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.people__item {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.people__item img {
+    height: 400px;
+    width: 319px;
+}
+
+.people__item h3 {
+    margin: .7em 0 0;
+}
+
+.people__item p {
+    margin: .25em 0 0;
+}
+
+footer {
+    background: #313131;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff6760;
+}
+
+.rights {
+    font-size: 14px;
+    margin: .5em 0 0;
+}
+
+table {
+    border: 1px solid #cbcbcb;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #777;
+    line-height: 1.6;
+    margin: 20px 0 0;
+}
+
+thead {
+    color: #333;
+    text-align: left;
+    background-color: #e0e0e0;
+    vertical-align: middle;
+}
+
+table td, table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+
+table td:first-child,
+table th:first-child {
+    border-left-width: 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.price-table {
+    
+}
+
+.price-table thead {
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+form {
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+.form-group {
+    display: flex;
+    margin: 10px 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 200px;
+}
+
+.form-group > label {
+    padding: 2px 20px 2px 0;
+    width: 250px;
+}
+
+.products-labels label {
+    display: block;
+}
+
+.products-labels label + label {
+    margin-top: 10px;
+}
+
+.buttons-group {
+    margin-top: 30px;
+}
+
+.buttons-group button + button {
+    margin-left: 10px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>РОСГОССТРАХ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <header>
+        <div class="header__wrap">
+            <div class="logo">РОСГОССТРАХ</div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="req.html">Реквизиты</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a class="active " href="reg.html">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Регистрация</h1>
+        <form method="post" class="reg-form">
+            <div class="form-group">
+                <label for="lname">Фамилия <em>*</em></span></label>
+                <input id="lname" name="lname" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="fname">Имя <em>*</em></label>
+                <input id="fname" name="fname" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="mname">Отчество</label>
+                <input id="mname" name="mname" type="text">
+            </div>
+            <div class="form-group">
+                <label for="city">Город проживания <em>*</em></label>
+                <input id="city" name="city" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail <em>*</em></label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-group">
+                <label for="web">Веб-сайт</label>
+                <input id="web" name="web" type="text">
+            </div>
+            <div class="form-group">
+                <label>Пол</label>
+                <div>
+                    <label>Мужской <input name="sex" type="radio" value="male"></label>
+                    <label>Женский <input name="sex" type="radio" value="female"></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="work-type">Деятельность</label>
+                <select name="work-type" id="work-type">
+                    <option value="sell">Поставка</option>
+                    <option value="buy">Закупка</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="office">Предпочитаемый офис</label>
+                <select name="office" id="office">
+                    <option value="office 1">Офис на Профсоюзной 11</option>
+                    <option value="office 2">Офис на Урицкого 15</option>
+                    <option value="office 3">Офис на Грибоедова 115</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Товары</label>
+                <div class="products-labels">
+                    <label>Наименование 1 <input type="checkbox" name="product" value="product 1"></label>
+                    <label>Наименование 2 <input type="checkbox" name="product" value="product 2"></label>
+                    <label>Наименование 3 <input type="checkbox" name="product" value="product 3"></label>
+                    <label>Наименование 4 <input type="checkbox" name="product" value="product 4"></label>
+                    <label>Наименование 5 <input type="checkbox" name="product" value="product 5"></label>
+                </div>
+            </div>
+            <div class="form-group buttons-group">
+                <button class="btn btn-submit" type="submit">Зарегистрироваться</button>
+                <button class="btn" type="reset">Очистить форму</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="tel:+78002000900">8-800-200-0-900</a>
+        <p class="rights">&copy; Росгосстрах. 2018 г.</p>
+    </footer>
+</body>
+</html>
