@@ -23,7 +23,7 @@
     </header>
     <main>
         <h1>Регистрация</h1>
-        <form method="post" class="reg-form">
+        <form method="post" class="reg-form" id="register">
             <div class="form-group">
                 <label for="lname">Фамилия <em>*</em></span></label>
                 <input id="lname" name="lname" type="text" required>
@@ -90,5 +90,25 @@
         <a href="tel:+78002000900">8-800-200-0-900</a>
         <p class="rights">&copy; Росгосстрах. 2018 г.</p>
     </footer>
+    <script>
+      const form = document.getElementById("register");
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    let html = "<h2 id='form-data'>Данные с формы:</h2><ul>";
+    
+    for (let [key, value] of formData.entries()) {
+        html += `<li>${key} = ${value}</li>`;
+    }
+    
+    html += "</ul>";
+
+    form.parentElement.insertAdjacentHTML("beforeEnd", html);
+
+    document.getElementById('form-data').scrollIntoView();
+});
+    </script>
 </body>
 </html>
